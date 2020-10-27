@@ -1,24 +1,38 @@
+# Wordpress, laravel lumen api com vue
+
+Uma api laravel lumem servindo pagina wordpress com vuejs
+
+  - Type [wpvue] Markdown
+  - See HTML
+  - Magic
+
+# New Features!
+    -
 # wordpress-vue-lumem
 Uma api laravel lumem servindo pagina wordpress com vuejs
 
-#Install
+# Install
 Instalar wordpress e laravel lumen
 
-#Wordpress tag
+# Wordpress tag
 Usar essa tag na pagina [wpvue]
 Copiar a pasta wp-vue para pasta de plugins do wordpress
 
-#Laravel Lumen
+# Laravel Lumen
 Copiar o arquivo web.php para pasta rotas ou colocar codigo php 
-
+```php
 $router->get('foo',function() {
     return response()->json(['name' => 'Virat Gandhi', 'state' => 'Gujarat']);
 });
+```
 
-#Vuejs e Axios
+# Vuejs e Axios
 Importar axios
-https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js
+```js
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+```
 
+```js
 Vue.prototype.$http = axios
 
 var app = new Vue({
@@ -32,3 +46,4 @@ var app = new Vue({
             .then(response => (this.message = response))
     }
 })
+```
